@@ -1,5 +1,6 @@
 "use strict"
 
+// variables 
 const postContent = document.getElementById("postContent");
 const postBtn = document.getElementById("Bttnpostsubmit");
 

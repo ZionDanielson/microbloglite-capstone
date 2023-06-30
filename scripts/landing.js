@@ -13,17 +13,16 @@ submitBtn.onclick = function (event) {
 
     // We can use loginForm.username (for example) to access
     // the input element in the form which has the ID of "username".
-    const loginData = {
+
+    const loginData = {         
         username: loginUsername.value,
         password: loginPassword.value,
     };
 
-    // Disables the button after the form has been submitted already:
-    // loginForm.loginButton.disabled = true;
 
-    // Time to actually process the login using the function from auth.js!
-    let loginResult = login(loginData);
-    console.log(loginResult);
+    // calls function from auth.js
+    let loginResult = login(loginData); //logindata contains users input in the fields
+    console.log(loginResult);           // initaties login process
 
     
 };
